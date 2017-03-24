@@ -9,26 +9,20 @@ define(function(){
         }
     });
 
-    require(['service/network', 'model/user'], function(Network, User){
+    require(['service/network', 'ui'], function(Network, UI){
         var net = new Network('http://localhost:8000');
-        var user = new User();
+        var ui = new UI();
 
-        Promise.all([net.connect()])
+        Promise.all([net.connect(), ui.init()])
 
             .then(function(){
-                net.onNewMessage(function(msg){
-                    console.log("<<<", msg);
-                }, this)
+                net.onNewMessage(ui.render, ui)
             })
 
             .then(function(){
-                var msg = {
-                    user: user.getUID(),
-                    message: 'hello'
-                };
-
-                console.log(">>>", msg);
-                net.send(msg)
+                window.addEventListener('new', function(e){
+                    net.send(e.detail);
+                })
             })
 
             .catch(console.error.bind(console, 'Something went wrong'));

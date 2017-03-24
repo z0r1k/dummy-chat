@@ -1,14 +1,18 @@
 define(function(){
 
     /**
-     * @class User
+     * @class User (singleton)
+     * @constructor
      */
     var User = function(){
         this._uid = -1;
     };
 
     User.prototype = {
-
+        /**
+         * User Id
+         * @return {number}
+         */
         getUID: function(){
             if (this._uid !== -1) {
                 return this._uid;
@@ -17,8 +21,7 @@ define(function(){
             this._uid = Math.round(Math.random() * 100 % 100);
             return this._uid;
         }
-
     };
 
-    return User;
+    return new User();
 });

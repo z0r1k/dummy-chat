@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <script type="x-template" id="tpl-message">
+        <li class="list-group-item" data-user="{user}"><span>{userid}</span><p>{message}</p></li>
+    </script>
+
     <div class="container">
         <div class="page-header">
             <h1>Basic chat</h1>
         </div>
-        <p class="lead">Your user id is: <strong>{userid}</strong></p>
+        <p class="lead">Your user id is: <strong class="userid">{userid}</strong></p>
 
         <div class="messages">
-            <ul class="list-group">
-                <!--<li class="list-group-item">1</li>-->
-                <!--<li class="list-group-item" data-user="me">me</li>-->
-            </ul>
+            <ul class="list-group"></ul>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-            <form class="form">
+            <form class="form" action="#" method="get">
                 <textarea id="chat-message" class="form-control" placeholder="Please type your message here" required="" autofocus=""></textarea>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Post</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
             </form>
         </div>
     </footer>

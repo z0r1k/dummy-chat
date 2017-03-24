@@ -21,7 +21,7 @@ body {
 }
 
 .form {
-    padding: 15px 0 75px 0;
+    padding: 15px 0 15px 0;
 }
 
 .form .form-control {
@@ -42,7 +42,7 @@ body {
 
 .messages {
     border: 1px dashed #ddd;
-    height: 600px;
+    min-height: 320px; /* Y U NO RESPONSIVE */
     overflow-y: scroll;
     overflow-x: hidden;
 }
