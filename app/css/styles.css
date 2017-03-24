@@ -42,7 +42,7 @@ body {
 
 .messages {
     border: 1px dashed #ddd;
-    min-height: 320px; /* Y U NO RESPONSIVE */
+    height: 320px; /* Y U NO RESPONSIVE */
     overflow-y: scroll;
     overflow-x: hidden;
 }
