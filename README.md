@@ -39,5 +39,4 @@ Just open same URL several times for multi-party chat.
 Simple unit test. For the rest of functionality I would have to write some e2e integration test or mock things out.
 It is an overkill for this scope, imo, just because it is a sample app to show a glimpse of "idea".
 
-<br><br>
 **GL HF**
