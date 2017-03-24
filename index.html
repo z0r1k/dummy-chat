@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dummy chat app</title>
+</head>
+<body>
+    <script type="text/javascript" src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script>
+        var socket = io('http://localhost:8000');
+
+        var message = {
+            user: Math.round(Math.random() * 100 % 100),
+            message: 'hello'
+        };
+        console.log('>>> new-chat', message);
+
+        socket.emit('new-chat', message);
+
+        socket.on('new-chat', console.log.bind(console, '<<< new-chat'));
+    </script>
+</body>
+</html>
