@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="../app/bower_components/mocha/mocha.css" />
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <script type="text/javascript" src="../app/bower_components/mocha/mocha.js"></script>
+    <script type="text/javascript">
+        if (typeof initMochaPhantomJS === 'function') {
+            initMochaPhantomJS();
+        }
+        mocha.ui('bdd');
+    </script>
+    <script type="text/javascript" src="../app/bower_components/requirejs/require.js" data-main="require-config"></script>
+</body>
+</html>

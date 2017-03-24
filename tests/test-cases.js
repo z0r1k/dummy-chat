@@ -1,0 +1,3 @@
+define([
+    'model/user.spec',
+]);
