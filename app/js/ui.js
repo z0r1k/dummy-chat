@@ -42,6 +42,13 @@ define(['model/user'], function(user){
             var form = document.querySelector('footer form'),
                 area = document.querySelector('footer form textarea');
 
+            form.addEventListener('keydown', function(e){
+                if (e.keyCode === 13 && e.ctrlKey) {
+                    var btn = document.querySelector('footer form button[type="submit"]');
+                    btn.click();
+                }
+            }.bind(this));
+
             form.addEventListener('submit', function(e){
                 e.preventDefault();
 
