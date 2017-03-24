@@ -1,0 +1,22 @@
+{
+  "name": "dummy-chat",
+  "description": "super dummy chat app",
+  "main": "index.js",
+  "authors": [
+    "Mykhailo Lieibenson"
+  ],
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/z0r1k/dummy-chat#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^1.7.2",
+    "bootstrap": "^3.3.7"
+  }
+}
