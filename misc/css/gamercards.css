@@ -1,0 +1,48 @@
+.gf-gamercards-list li,
+.gf-gamercards-list img,
+.gf-gamercards-list figure,
+.gf-gamercards-list figcaption
+{
+    display: inline-block;
+}
+
+.gf-gamercards-list
+{
+    width: 660px;
+    float: left;
+    background: url("shelf.png") 0 -85px repeat-y;
+}
+
+.gf-gamercards-list li
+{
+    width: 220px;
+    padding: 0 0 65px 0;
+    text-align: center;
+    background: url("gamercards/gamercards-reflection.png") no-repeat center 190px;
+}
+
+.gf-gamercards-list figure
+{
+    vertical-align: top;
+}
+
+.gf-gamercards-list img
+{
+    width: 140px;
+    height: 190px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gf-gamercards-list figcaption
+{
+    clear: both;
+    width: 140px;
+    margin: 17px 0 0 0;
+    font: normal 11px/11px Arial, Sans-serif;
+    color: #5d5d5d;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,12 @@
+branch-defaults:
+  master:
+    environment: GW-CC
+global:
+  application_name: gw-tp
+  default_ec2_keyname: mykhailol-avad
+  default_platform: 64bit Amazon Linux 2015.09 v2.0.5 running Node.js
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
+deploy:
+  artifact: dist/package.zip

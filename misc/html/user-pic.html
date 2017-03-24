@@ -1,0 +1,22 @@
+<script type="text/html" id="user-pic">
+    <figure class="<%=data.classes%>" data-userid="<%=data.userid%>" <%IF data.hoverable %>data-hoverable="true"<%ENDIF;%>>
+        <%IF data.url%>
+            <%IF data.showAltTitle %>
+                <a href="<%=data.url%>" title='<%=this.secureText(data.name, "high");%>'>
+            <%ELSE%>
+                <a href="<%=data.url%>">
+            <%ENDIF;%>
+        <%ENDIF%>
+        <img width="<%=data.sizeCss%>" height="<%=data.sizeCss%>" src="<%=data.src%>" alt='<%=this.secureText(data.name, "high");%>' />
+        <%IF data.keyframer%>
+            <b class="gf-keyframer"><!-- / --></b>
+        <%ENDIF%>
+        <%IF data.title%>
+            <figcaption data-nickname="<%=data.onlyNickname;%>"><%=this.secureText(data.name, "high");%></figcaption>
+        <%ENDIF%>
+        <%IF data.url%></a><%ENDIF%>
+        <%IF data.reflection%>
+            <div class="gf-reflection-flip"><img width="<%=data.sizeCss%>" height="<%=data.sizeCss%>" src="<%=data.src%>" /></div>
+        <%ENDIF%>
+    </figure>
+</script>
