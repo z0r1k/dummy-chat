@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dummy chat app</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Basic chat</h1>
+        </div>
+        <p class="lead">Your user id is: <strong>{userid}</strong></p>
+
+        <div class="messages">
+            <ul class="list-group">
+                <li class="list-group-item">1</li>
+                <li class="list-group-item" data-user="me">me</li>
+                <li class="list-group-item">1</li>
+                <li class="list-group-item">2</li>
+                <li class="list-group-item">2</li>
+                <li class="list-group-item">3</li>
+                <li class="list-group-item" data-user="me">me</li>
+                <li class="list-group-item">3</li>
+                <li class="list-group-item">2</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <form class="form">
+                <textarea id="chat-message" class="form-control" placeholder="Please type your message here" required="" autofocus=""></textarea>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Post</button>
+            </form>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="bower_components/requirejs/require.js" data-main="js/app"></script>
+</body>
+</html>

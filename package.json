@@ -7,7 +7,7 @@
     "start": "node server.js",
     "postinstall": "./node_modules/.bin/bower install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "./node_modules/.bin/http-server -p 8080 -c-1 -d false -a localhost"
+    "serve": "./node_modules/.bin/http-server app/ -p 8080 -c-1 -d false -a localhost -o"
   },
   "repository": {
     "type": "git",

@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "socket.io-client": "^1.7.2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.3"
   }
 }
